@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Content-type: application/pdf"
-echo ""
+echo
 
-/usr/local/bin/wkhtmltopdf - -
+exec /usr/local/bin/wkhtmltopdf - -
 

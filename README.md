@@ -13,9 +13,12 @@ package can not run without a X11 environment
 
 cURL example:
 
-    curl -H "Expect:" --data-binary @filename.html  http://localhost:8080/convert
+    curl -sS -H "Expect:" --data-binary @filename.html  http://localhost:8080/convert
     
+Another Example:
+
+     echo "<h1>This is html</h1>" | curl -H "Expect:" --data-binary @- -sS http://localhost:8080/convert   
 
 ## More
-Its on docker hub: https://hub.docker.com/r/svinther/docker-wkhtmltopdf/
+
 
